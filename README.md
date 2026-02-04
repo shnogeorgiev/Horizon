@@ -62,6 +62,9 @@ The operator remains fully in control at all times.
 - Flag
 - Secret
 
+![Primitives](https://github.com/user-attachments/assets/94fbe13a-fefd-410f-ba6b-c03e42b6b076)
+
+
 Primitives are intentionally minimal and unconstrained.  
 **Absence of data is meaningful.**
 
@@ -168,6 +171,10 @@ The Python script turns those facts into **readable documentation**.
 The exporter is a **helper**, not an analyst.
 
 ---------------------------------------------------------------------
+
+![horizon demo](https://github.com/user-attachments/assets/82eef850-df99-4eb4-bad6-515e4843e915)
+
+
 
 ## Version
 
