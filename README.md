@@ -3,6 +3,8 @@
 Horizon is a **lightweight, offline-first visual attack mapping tool**
 designed for **penetration testers and certification exams**.
 
+![horizon demo](https://github.com/user-attachments/assets/82eef850-df99-4eb4-bad6-515e4843e915)
+
 It runs entirely in the browser and is built with **vanilla HTML, CSS, and JavaScript**.
 
 No backend.  
@@ -171,10 +173,6 @@ The Python script turns those facts into **readable documentation**.
 The exporter is a **helper**, not an analyst.
 
 ---------------------------------------------------------------------
-
-![horizon demo](https://github.com/user-attachments/assets/82eef850-df99-4eb4-bad6-515e4843e915)
-
-
 
 ## Version
 
