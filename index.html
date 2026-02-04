@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Horizon</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ✅ TOOLBAR -->
+  <div id="toolbar">
+
+   <!-- ✅ PRIMITIVES GROUP -->
+<div class="group primitives-group">
+  <button class="group-btn">PRIMITIVES</button>
+
+  <div class="dropdown primitives-dropdown">
+    <div class="primitive-group">
+      <div class="primitive-title">INFRASTRUCTURE</div>
+      <div class="primitive-submenu">
+        <button id="spawn-host">HOST</button>
+        <button id="spawn-zone">ZONE</button>
+        <button id="spawn-dc">DOMAIN CONTROLLER</button>
+        <button id="spawn-webapp">WEB</button>
+        <button id="spawn-db">SQL</button>
+        <button id="spawn-svc">SERVICE</button>
+      </div>
+    </div>
+
+    <div class="primitive-group">
+      <div class="primitive-title">OBJECT</div>
+      <div class="primitive-submenu">
+        <button id="spawn-vuln">VULN</button>
+        <button id="spawn-artifact">ARTIFACT</button>
+        <button id="spawn-note">NOTE</button>
+      </div>
+    </div>
+
+    <div class="primitive-group">
+      <div class="primitive-title">SECRET</div>
+      <div class="primitive-submenu">
+        <button id="spawn-credential">CREDENTIAL</button>
+        <button id="spawn-hash">HASH</button>
+        <button id="spawn-flag">FLAG</button>
+        <button id="spawn-secret">SECRET</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    <!-- ✅ IO GROUP -->
+    <div class="group">
+      <button class="group-btn">IO</button>
+      <div class="dropdown">
+        <button id="export-json">Export JSON</button>
+        <button id="import-btn">Import JSON</button>
+        <input type="file" id="import-json" style="display:none;" />
+      </div>
+    </div>
+
+    <!-- ✅ DRAW GROUP -->
+    <div class="group">
+      <button class="group-btn" id="draw-toggle">DRAW</button>
+      <div class="dropdown">
+
+        <input type="color" id="draw-color" value="#ff3b3b" title="Draw Color"/>
+
+        <div style="display:flex; flex-direction:column; gap:4px;">
+          <input type="range" id="draw-size" min="0" max="6" step="1" value="0"/>
+          <span id="draw-size-label" style="font-size:12px; opacity:0.7; text-align:center;">
+            1px
+          </span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ✅ ✅ ✅ TEXT TOOL (FULLY FIXED WITH DROPDOWN) -->
+    <div class="group">
+      <button class="group-btn" id="text-toggle">TEXT</button>
+      <div class="dropdown">
+
+        <!-- TEXT COLOR -->
+        <input type="color" id="text-color" value="#ffd54f" title="Text Color"/>
+
+        <!-- TEXT SIZE -->
+        <div style="display:flex; flex-direction:column; gap:4px;">
+          <input type="range" id="text-size" min="0" max="6" step="1" value="3"/>
+          <span id="text-size-label" style="font-size:12px; opacity:0.7; text-align:center;">
+            16px
+          </span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ✅ FEED PLACEHOLDER -->
+    <div class="group">
+      <button class="group-btn">FEED</button>
+      <div class="dropdown">
+        <div style="opacity:0.5;">(coming soon)</div>
+      </div>
+    </div>
+
+    <!-- ✅ CLEAR BUTTON -->
+    <button
+      id="clear-all"
+      style="
+        margin-left:auto;
+        background:#b71c1c;
+        color:white;
+        border:none;
+        padding:6px 14px;
+        border-radius:6px;
+        cursor:pointer;
+      "
+    >
+      CLEAR
+    </button>
+
+  </div>
+
+  <!-- ✅ VIEWPORT -->
+  <div id="viewport">
+    <div id="canvas"></div>
+    <div id="draw-layer"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
