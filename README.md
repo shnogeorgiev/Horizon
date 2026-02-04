@@ -1,4 +1,4 @@
-# Horizon — Visual Pentest Mapping Tool
+# Horizon — Killchain Mapper
 
 Horizon is a **lightweight, offline-first visual attack mapping tool**
 designed for **penetration testers and certification exams**.
